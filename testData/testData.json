@@ -6,5 +6,10 @@
   "invalidUser": {
     "username": "invalid_user",
     "password": "invalid_password"
-  }
+  },
+  "cartProducts": [
+    "Sauce Labs Backpack",
+    "Sauce Labs Bolt T-Shirt",
+    "Sauce Labs Onesie"
+  ]
 }

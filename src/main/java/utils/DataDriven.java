@@ -15,7 +15,13 @@ public class DataDriven {
 
             Gson gson = new Gson();
 
-            return gson.fromJson(reader, TestData.class);
+            TestData data = gson.fromJson(reader, TestData.class);
+
+            System.out.println("Username: " + data.validUser.username);
+            System.out.println("Password: " + data.validUser.password);
+            System.out.println("Cart Products: " + data.cartProducts.length);
+
+            return data;
 
         } catch (IOException e) {
 
@@ -27,6 +33,7 @@ public class DataDriven {
 
         public UserData validUser;
         public UserData invalidUser;
+        public String[] cartProducts;
     }
 
     public static class UserData {
